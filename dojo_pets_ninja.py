@@ -8,4 +8,6 @@ class Ninja:
         self.treats = treats
         self.pet_food = pet_food
 
+    # def walk(self, pet):
+
 
