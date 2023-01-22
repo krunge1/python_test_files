@@ -1,10 +1,10 @@
-# import dojo_pets_ninja
+# import dojo_names_ninja
 
 class Pets:
     def __init__(self, name, type, tricks, health, energy, sound):
         self.name = name
         self.type = type
-        self.tricks = [tricks]
+        self.tricks = tricks
         self.health = health
         self.energy = energy
         self.sound = sound
@@ -30,10 +30,4 @@ class Pets:
             self.health += 5
             print(f"{self.name} feels refreshed! Health increased by 5 points. {self.name}'s health is now {self.health}")
 
-shadow = Pets('Shadow', 'Dog', ['Be a good boy!', 'Shake', 'Fetch'], 100, 75, 'Chewbacca noises !!!!')
 
-shadow.sleep('Shadow')
-shadow.eat('Shadow')
-shadow.play('Shadow')
-
-print (shadow.tricks)
