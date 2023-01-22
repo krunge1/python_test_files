@@ -8,8 +8,10 @@ class Ninja:
         self.treats = treats
         self.pet_food = pet_food
 
-    def getPet(self, name, type, tricks, health, energy, sound):
-        name = dojo_pets_pets.Pets(name, type, tricks, health, energy, sound)
+    def getPet(self, pet):
+        pet = dojo_pets_pets.Pets.name
+        
+
 
     # def walk(self, pet):
         # dojo_pets_pets.Pets.play(pet)
@@ -18,6 +20,6 @@ class Ninja:
 kyle = Ninja('Kyle', 'Runge', 'Shadow', 'Hotdog', 'Purina')
 kyle.getPet('Shadow', 'Dog', ['Be a good boy!', 'Shake', 'Fetch'], 100, 75, 'Chewbacca noises !!!!')
 
-kyle.walk('Shadow')
+# kyle.walk('Shadow')
 
 
