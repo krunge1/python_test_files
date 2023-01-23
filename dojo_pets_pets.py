@@ -13,21 +13,23 @@ class Pets:
         if self.name == name:
             self.health += 25
             print(f"{self.name} feels refreshed! Health increased by 25 points. {self.name}'s health is now {self.health}")
+            return self
     
     def eat(self, name):
         if self.name == name:
             self.health += 5
             self.energy += 10
-            print(f"{self.name} at some grub! Health increased by 5 points and energy up by 10. {self.name}'s health is now {self.health} and energy {self.energy}")
+            print(f"{self.name} ate some grub! Health increased by 5 points and energy up by 10. {self.name}'s health is now {self.health} and energy {self.energy}")
+            return self
 
     def play(self, name):
         if self.name == name:
             self.health += 5
-            print(f"{self.name} feels refreshed! Health increased by 5 points. {self.name}'s health is now {self.health}")
+            print(f"{self.name} enjoyed playing {self.tricks[0]}. {self.name}'s health is now {self.health}")
+            return self
 
-    def play(self, name):
+    def noise(self, name):
         if self.name == name:
-            self.health += 5
-            print(f"{self.name} feels refreshed! Health increased by 5 points. {self.name}'s health is now {self.health}")
-
+            print(f"{self.name} just {self.sound}")
+            return self
 
