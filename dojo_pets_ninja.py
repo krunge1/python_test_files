@@ -27,5 +27,6 @@ class Ninja:
         return self
     # bathe() - cleans the ninja's pet invoking the pet noise() method
 
+#passing the pet into master class
 
 
